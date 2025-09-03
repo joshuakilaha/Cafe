@@ -1,0 +1,40 @@
+.wrap {
+  height: 64px;
+}
+
+.brand {
+  color: var(--brand-red);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem; /* spacing between nav links */
+  align-items: center;
+}
+
+.item {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.itemActive {
+  color: var(--brand-red);
+}
+
+.menuBtn {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+}
+
+.mobile {
+  border-top: 1px solid var(--border);
+  padding-block: 0.75rem;
+}

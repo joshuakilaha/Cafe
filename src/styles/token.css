@@ -1,0 +1,72 @@
+:root {
+--brand-gold: #fab906;
+--brand-red: #6d1927;
+--bg: #fafafa;
+--text: #1f2937;
+--muted: #6b7280;
+--surface: #ffffff;
+--border: #e5e7eb;
+--radius: 16px;
+--shadow: 0 6px 20px rgba(0,0,0,.06);
+--font-display: "Playfair Display", serif;
+--font-body: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+
+
+.container { padding-inline: 1rem; }
+@media (min-width: 640px) { .container { padding-inline: 1.5rem; } }
+@media (min-width: 1024px) { .container { padding-inline: 2rem; } }
+
+
+.section { padding-block: 3rem; }
+@media (min-width: 640px) { .section { padding-block: 4rem; } }
+
+
+.grid { display: grid; gap: 1rem; }
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+
+.flex { display: flex; }
+.center { align-items: center; justify-content: center; }
+.between { justify-content: space-between; align-items: center; }
+.stack { display: grid; gap: .75rem; }
+
+
+.btn { display:inline-flex; align-items:center; justify-content:center; padding:.6rem 1rem; border-radius: 12px; font-weight: 600; border:1px solid transparent; cursor:pointer; }
+.btn-primary { background: var(--brand-red); color: #fff; }
+.btn-primary:hover { opacity: .92; }
+.btn-secondary { background: var(--brand-gold); color: #111827; }
+
+
+.input { width:100%; border:1px solid var(--border); border-radius:12px; padding:.6rem .75rem; font: inherit; }
+.input:focus { outline: 2px solid var(--brand-gold); outline-offset: 1px; }
+
+
+.card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); box-shadow: var(--shadow); }
+.card-pad { padding: 1rem; }
+
+
+h1,h2,h3 { margin:0; font-family: var(--font-display); }
+h1 { font-size: clamp(2rem, 4vw, 3.25rem); }
+h2 { font-size: clamp(1.5rem, 2.5vw, 2.25rem); color: var(--brand-red); }
+h3 { font-size: 1.25rem; }
+
+
+.muted { color: var(--muted); }
+.link { color: var(--brand-red); text-decoration: none; }
+.link:hover { text-decoration: underline; }
+
+
+img { max-width: 100%; height: auto; display:block; border-radius: 14px; }
+
+
+/* Responsive helpers */
+@media (max-width: 767px) {
+.hide-sm { display: none !important; }
+}

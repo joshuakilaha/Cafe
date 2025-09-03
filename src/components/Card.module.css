@@ -1,0 +1,17 @@
+/* .card { composes: card from '../styles/tokens.css'; }
+.pad { composes: card-pad from '../styles/tokens.css'; } */
+
+/* App.module.css */
+.card-pad {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.pad {
+  /* composes: card-pad; */
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,25 @@
+@import './token.css';
+
+
+.app { min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; }
+.header { position: sticky; top: 0; z-index: 40; backdrop-filter: blur(4px); background: rgba(255,255,255,.9); border-bottom: 1px solid var(--border); }
+.footer { border-top:1px solid var(--border); background:#fff; }
+
+
+.hero { position: relative; color:#fff; }
+.hero::before { content:""; position:absolute; inset:0; background: url('https://images.unsplash.com/photo-1541542684-4a9c95e799e9?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat; }
+.hero::after { content:""; position:absolute; inset:0; background: rgba(0,0,0,.45); }
+.hero-inner { position: relative; padding-block: clamp(3rem, 12vw, 8rem); }
+.brand { font-weight: 700; color: var(--brand-red); font-family: var(--font-display); font-size: 1.25rem; }
+
+
+.nav { gap: 1rem; }
+.nav a { color:#374151; font-weight:600; text-decoration:none; }
+.nav a.active, .nav a:hover { color: var(--brand-red); }
+
+
+.badge { display:inline-block; background: #fff; color:#111; padding:.25rem .5rem; border-radius:999px; border:1px solid var(--border); }
+
+
+.prose p { line-height: 1.7; color:#374151; }
+.prose h3 { margin-top: 1.25rem; margin-bottom: .5rem; color:#111827; }
