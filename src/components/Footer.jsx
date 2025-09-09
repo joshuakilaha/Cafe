@@ -1,4 +1,5 @@
-import NewsletterForm from './NewsletterForm'
+import NewsletterForm from './NewsletterForm.jsx'
+
 
 
 export default function Footer() {
