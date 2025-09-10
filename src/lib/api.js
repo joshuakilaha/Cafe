@@ -12,6 +12,12 @@ export async function getCustomers() {
   return data
 }
 
+
+export async function getCustomerById(customerId) {
+  const { data } = await client.get(`/customers/${customerId}`)
+  return data   // expects: { id, name, email, phone_number }
+}
+
 export async function createCustomer({ name, email, phone, newsletter = false }) {
   // MODEL expects phone_number and newsletter_signup
   const payload = {
